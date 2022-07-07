@@ -56,20 +56,25 @@ const btn5 = document.querySelector('#btn-5');
 
 //le asignamos un evento al boton y le agregamos una funcion
 // cada vez que le damos click cambia el color del body
-btn1.addEventListener('click', () => {
+btn1.addEventListener('click', (e) => {
   body.style.backgroundColor = '#ffc107';
+  console.log('Valor del botton: ', e.target.innerText);
 });
-btn2.addEventListener('click', () => {
+btn2.addEventListener('click', (e) => {
   body.style.backgroundColor = '#051937';
+  console.log('Valor del botton: ', e.target.innerText);
 });
-btn3.addEventListener('click', () => {
+btn3.addEventListener('click', (e) => {
   body.style.backgroundColor = '#A8EB12';
+  console.log('Valor del botton: ', e.target.innerText);
 });
-btn4.addEventListener('click', () => {
+btn4.addEventListener('click', (e) => {
   body.style.backgroundColor = '#5FFBF1';
+  console.log('Valor del botton: ', e.target.innerText);
 });
-btn5.addEventListener('click', () => {
+btn5.addEventListener('click', (e) => {
   body.style.backgroundColor = '#86A8E7';
+  console.log('Valor del botton: ', e.target.innerText);
 });
 
 btnSubmit.addEventListener('click', () => {
